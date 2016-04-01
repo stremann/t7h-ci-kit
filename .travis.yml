@@ -3,6 +3,9 @@ node_js:
   - '5'
 git:
   depth: 5
+before_script:
+  - ./lib/sauce/sauce_connect_setup.sh
+  - ./lib/sauce/sauce_connect_block.sh
 script:
   - npm run build
   - npm test
