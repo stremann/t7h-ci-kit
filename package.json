@@ -20,7 +20,7 @@
     "lint": "eslint src",
     "lint:front": "eslint src/front",
     "lint:back": "eslint src/back",
-    "protractor": "node protractor ../../../protractor.config.js"
+    "protractor": "node node_modules/protractor/bin/protractor protractor.config.js"
   },
   "repository": {
     "type": "git",
