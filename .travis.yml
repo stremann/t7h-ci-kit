@@ -4,6 +4,7 @@ node_js:
 git:
   depth: 5
 before_script:
+  - chmod +x ./lib/sauce/sauce_connect_setup.sh ./lib/sauce/sauce_connect_block.sh ./travis_build.sh ./travis_print_logs.sh
   - ./lib/sauce/sauce_connect_setup.sh
   - ./lib/sauce/sauce_connect_block.sh
 script:
